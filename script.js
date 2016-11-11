@@ -13,14 +13,14 @@ var quotes = [
 		{
 			quote: "You miss 100% of the shots you don't take",
 			source: "-Wayne Gretzky -Michael Scott",
-			year: 2009
+			year: 2009,
 			tags: "Inspirational"
 		},
 		{
 			quote: "They don't think it be like it is, but it do",
 			source: "-Oscar Gamble",
 			year: 1975,
-			tags: "Inspirational"
+			tags: 'Inspirational'
 		},
 		{
 			quote: "It matters not what someone is born, but what they grow to be",
@@ -31,17 +31,16 @@ var quotes = [
 		{
 			quote: "Time is a face on the water",
 			source: "-Roland Deschain",
-			year: 1997
+			year: 1997,
 			tags: "Advice"
 		},
 		{
 			quote: "I need you more than anything in my life. I want more than anything in my life. I'll miss you more than anyone in my life. I love you more than anyone in my life",
 			source: "-Daft Punk",
-			year: 2001
+			year: 2001,
 			tags: "Love"
 
-		},
-
+		}
 ];
 
 //This code serves to print out the above 2D array
@@ -57,11 +56,11 @@ function getRandomQuote() {
 		
 		var splitQuote = quotes.split(randomQuote, 1)[0];
 		viewedQuotes.push(splitQuote);
-		if (quote.length === 0 ){
+		if (randomQuote.length === 0 ){
 				quotes = viewedQuotes;
 				viewedQuotes = [];
 		}
-		return splitQuote
+		return splitQuote;
 }
 
 //This function will generate a random color value
