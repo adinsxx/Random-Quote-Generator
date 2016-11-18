@@ -19,7 +19,7 @@ var unique_quotes_used = [];
 
 
 //This array serves to hold the quotes, source, year, and tags
-
+ 
 var quotes = [
 		{
 			quote: "You miss 100% of the shots you don't take",
