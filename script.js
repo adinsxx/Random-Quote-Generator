@@ -55,11 +55,10 @@ function getRandomQuote() {
 function printQuote() {
 	//Stores the randome quote
 	var printRandomQuote = getRandomQuote();
-	var quotes = "<p class='quotes'>" + printRandomQuote.quote + "</p>";
+	var quotes = "<p class='quote'>" + printRandomQuote.quote + "</p>";
 		  quotes += "<p class='source'>" + printRandomQuote.source + "</p>";
 		  quotes += "<p class='citation'>" + printRandomQuote.citation + "</p>";
 		  quotes += "<p class='year'>" + printRandomQuote.year + "</p>";
  	//Prints out random quote
  	document.getElementById('quote-box').innerHTML = quotes;
 } 
-
