@@ -59,7 +59,7 @@ function printQuote() {
 		  quotes += "<p class='source'>" + printRandomQuote.source + "</p>";
 		  quotes += "<p class='citation'>" + printRandomQuote.citation + "</p>";
 		  quotes += "<p class='year'>" + printRandomQuote.year + "</p>";
- 	
- 	document.getElementById('quote-box').innerHTML = ;
+ 	//Prints out random quote
+ 	document.getElementById('quote-box').innerHTML = quotes;
 } 
 
