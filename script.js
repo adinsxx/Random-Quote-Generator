@@ -7,7 +7,7 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 var quotes = [
 		{
 			quote: "You miss 100% of the shots you don't take",
-			source: "Wayne Gretzky"
+			source: "Wayne Gretzky",
 			year: 2009,
 			citation: "Michael Scott",
 			tags: ["inspirational", "humor"]
@@ -48,7 +48,7 @@ var quotes = [
 function getRandomQuote() {
 	//Calls all the quotes from the array
 	var randomQuote = Math.floor(Math.random() * (quotes.length)); 
-	return quotes[random];
+	return quotes[randomQuote];
 }
 
 //Prints out the quote called from the getRandomQuote function 
@@ -56,10 +56,10 @@ function printQuote() {
 	//Stores the randome quote
 	var printRandomQuote = getRandomQuote();
 	var quotes = "<p class='quotes'>" + printRandomQuote.quote + "</p>";
-		quotes += "<p class='source'>" + printRandomQuote.source + "</p>";
-		"<span class='citation'>" + printRandomQuote.citation + "</span>";
-		"<span class='year'>" + printRandomQuote.year + "</span>" + "</p>";
+		  quotes += "<p class='source'>" + printRandomQuote.source + "</p>";
+		  quotes += "<p class='citation'>" + printRandomQuote.citation + "</p>";
+		  quotes += "<p class='year'>" + printRandomQuote.year + "</p>";
  	
- 	document.getElementById('quote-box').innerHTML;
+ 	document.getElementById('quote-box').innerHTML = ;
 } 
 
