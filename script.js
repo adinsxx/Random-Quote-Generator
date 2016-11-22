@@ -52,7 +52,7 @@ var quotes = [
 ];
 
 function getRandomColor () {
-	var randomColor = Math.floor(Math.random() * (roygbiv.lenght));
+	var randomColor = Math.floor(Math.random() * (roygbiv.length));
 	return roygbiv[randomColor];
 }
 //Calls a random quote the array then cycles it back
@@ -80,5 +80,5 @@ function printQuote() {
 		 //quotes += "<p class='citation'>" + printRandomQuote.citation + "</p>";
 		 //quotes += "<p class='year'>" + printRandomQuote.year + "</p>";
  	//Prints out random quote
- 	document.getElementById('quote-box').innerHTML = quotes;
+ 	document.getElementById('quote-box').innerHTML = quotes, roygbiv;
 };
