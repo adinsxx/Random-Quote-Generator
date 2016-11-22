@@ -2,8 +2,15 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-//This array serves to hold the quotes, source, year, and citation
+var roygbiv = [
+"Blue",
+"Green",
+"Yellow",
+"Black",
+"Red",
+];
 
+//This array serves to hold the quotes, source, year, and citation
 var quotes = [
 		{
 			quote: "You miss 100% of the shots you don't take",
@@ -44,15 +51,19 @@ var quotes = [
 
 ];
 
+function getRandomColor () {
+	var randomColor = Math.floor(Math.random() * (roygbiv.lenght));
+	return roygbiv[randomColor];
+}
 //Calls a random quote the array then cycles it back
 function getRandomQuote() {
 	//Calls all the quotes from the array
 	var randomQuote = Math.floor(Math.random() * (quotes.length)); 
 	return quotes[randomQuote];
-}
+};
 
 //Prints out the quote called from the getRandomQuote function 
-function printArray() {
+function printQuote() {
 	//Stores the randome quote
 	var printRandomQuote = getRandomQuote();
 	var quotes = "<p class='quote'>" + printRandomQuote.quote + "</p>";
@@ -70,4 +81,4 @@ function printArray() {
 		 //quotes += "<p class='year'>" + printRandomQuote.year + "</p>";
  	//Prints out random quote
  	document.getElementById('quote-box').innerHTML = quotes;
-} 
+};
