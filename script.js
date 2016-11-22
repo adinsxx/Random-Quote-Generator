@@ -57,13 +57,17 @@ function printQuote() {
 	var printRandomQuote = getRandomQuote();
 	var quotes = "<p class='quote'>" + printRandomQuote.quote + "</p>";
 		quotes += "<p class='source'>" + printRandomQuote.source;
-	//Added the if statement to correct the formatting issues I was having in the array. 
-	if (printRandomQuote.year){
-		quotes += "<span class='year'>" + printRandomQuote.year + "</span>";
+	if (printRandomQuote.citation){
+		quotes += "<span class='citation'>" + printRandomQuote.citation + "</span>";
 	}
-    	if (printRandomQuote.citation){
-		quotes += "<span class='citation'>" + printRandomQuote.citation + "</span>" + "</p>";
+
+  if (printRandomQuote.year){
+		quotes += "<span class='year'>" + printRandomQuote.year + "</span>" + "</p>";
 	}
+
+  
+		 //quotes += "<p class='citation'>" + printRandomQuote.citation + "</p>";
+		 //quotes += "<p class='year'>" + printRandomQuote.year + "</p>";
  	//Prints out random quote
  	document.getElementById('quote-box').innerHTML = quotes;
 } 
