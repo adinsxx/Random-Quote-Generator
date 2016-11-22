@@ -52,16 +52,16 @@ function getRandomQuote() {
 }
 
 //Prints out the quote called from the getRandomQuote function 
-function printQuote() {
+function printArray() {
 	//Stores the randome quote
 	var printRandomQuote = getRandomQuote();
 	var quotes = "<p class='quote'>" + printRandomQuote.quote + "</p>";
 		quotes += "<p class='source'>" + printRandomQuote.source;
-	if (printRandomQuote.citation){
+	if (printRandomQuote.citation){ //added to fix formatting issues with year and citation
 		quotes += "<span class='citation'>" + printRandomQuote.citation + "</span>";
 	}
 
-  if (printRandomQuote.year){
+  	if (printRandomQuote.year){
 		quotes += "<span class='year'>" + printRandomQuote.year + "</span>" + "</p>";
 	}
 
